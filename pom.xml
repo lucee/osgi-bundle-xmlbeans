@@ -119,10 +119,10 @@
             <Bundle-SymbolicName>org.lucee.xmlbeans</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
             <Export-Package>*</Export-Package>
-            <!-- <Require-Bundle></Require-Bundle> -->
+            <Require-Bundle>org.lucee.stax;bundle-version=1.0.1</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <!-- <Import-Package>*</Import-Package> -->
-            <!-- <DynamicImport-Package>*</DynamicImport-Package> -->
+            <Import-Package>!com.sun.tools.javadoc,*</Import-Package>
+            <DynamicImport-Package>com.sun.tools.javadoc</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
