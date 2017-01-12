@@ -121,8 +121,8 @@
             <Export-Package>*</Export-Package>
             <Require-Bundle>org.lucee.stax;bundle-version=1.0.1</Require-Bundle>
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <Import-Package>!com.sun.tools.javadoc,*</Import-Package>
-            <DynamicImport-Package>com.sun.tools.javadoc</DynamicImport-Package>
+            <Import-Package>!com.sun.tools.javadoc,!org.apache.crimson.jaxp,!org.apache.tools.ant,!org.apache.tools.ant.taskdefs,!org.apache.tools.ant.types,*</Import-Package>
+            <DynamicImport-Package>com.sun.tools.javadoc,org.apache.crimson.jaxp,org.apache.tools.ant,org.apache.tools.ant.taskdefs,org.apache.tools.ant.types</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
