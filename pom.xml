@@ -2,11 +2,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.lucee</groupId>
   <artifactId>xmlbeans</artifactId>
-  <version>2.6.0</version>
-  <name>xmlbeans</name>
+  <version>3.1.0</version>
+  <name>Apache XmlBeans</name>
   <packaging>bundle</packaging>
 
-  <description>OSGi Version of xmlbeans</description>
+  <description>OSGi Version of Apache XmlBeans</description>
   <url>http://maven.lucee.org/xmlbeans/</url>
 
   <!-- same license as the original jar -->
@@ -95,7 +95,7 @@
                  <artifactItem>
                    <groupId>org.apache.xmlbeans</groupId>
                     <artifactId>xmlbeans</artifactId>
-                    <version>2.6.0</version>
+                    <version>3.1.0</version>
                    <type>jar</type>
                    <overWrite>false</overWrite>
                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
@@ -118,11 +118,11 @@
             <Bundle-Name>org.lucee.xmlbeans</Bundle-Name>
             <Bundle-SymbolicName>org.lucee.xmlbeans</Bundle-SymbolicName>
             <Bundle-Description>OSGI version of jar ${project.name}</Bundle-Description>
-            <Export-Package>*</Export-Package>
-            <Require-Bundle>org.lucee.stax;bundle-version=1.0.1</Require-Bundle>
+            <Export-Package>*,META-INF.services.*</Export-Package>
+            <!-- <Require-Bundle></Require-Bundle> -->
             <!-- <Require-Bundle-Fragment></Require-Bundle-Fragment> -->
-            <Import-Package>!com.sun.tools.javadoc,!org.apache.crimson.jaxp,!org.apache.tools.ant,!org.apache.tools.ant.taskdefs,!org.apache.tools.ant.types,*</Import-Package>
-            <DynamicImport-Package>com.sun.tools.javadoc,org.apache.crimson.jaxp,org.apache.tools.ant,org.apache.tools.ant.taskdefs,org.apache.tools.ant.types</DynamicImport-Package>
+            <Import-Package>!com.sun.tools.javadoc,!net.sf.saxon,!net.sf.saxon.dom,!net.sf.saxon.om,!net.sf.saxon.query,!net.sf.saxon.sxpath,!net.sf.saxon.value,!org.apache.tools.ant,!org.apache.tools.ant.taskdefs,!org.apache.tools.ant.types,*</Import-Package>
+            <DynamicImport-Package>com.sun.tools.javadoc,net.sf.saxon,net.sf.saxon.dom,net.sf.saxon.om,net.sf.saxon.query,net.sf.saxon.sxpath,net.sf.saxon.value,org.apache.tools.ant,org.apache.tools.ant.taskdefs,org.apache.tools.ant.types</DynamicImport-Package>
             <!-- <Fragment-Host></Fragment-Host> -->
           </instructions>
         </configuration>
@@ -139,7 +139,7 @@
     <url>https://github.com/lucee/osgi-bundle-xmlbeans</url>
     <connection>scm:git:git://github.com/lucee/osgi-bundle-xmlbeans.git</connection>
     <developerConnection>scm:git:git@github.com:lucee/osgi-bundle-xmlbeans.git</developerConnection>
-    <tag>xmlbeans OSGi library</tag>
+    <tag>Apache XmlBeans OSGi library</tag>
   </scm>
 
   <distributionManagement>
